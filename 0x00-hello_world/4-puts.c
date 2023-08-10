@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - this is file named hello world
+ * main - Entry point
  *
- * description: nothing to do here
+ * description: A C program that prints with put function
  *
- * return: 0 Always
- */
+ * return: Always 0 (success)
+*/
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
