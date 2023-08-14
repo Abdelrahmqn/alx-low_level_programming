@@ -8,14 +8,12 @@
 */
 int main(void)
 {
-int i = '48';
+	int i;
 
-	while (i <= '57')
-
-{
-		printf("%i\n", i);
-		i++;
-}
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d", i);
+	}
 	putchar('\n');
 	return (0);
 }
