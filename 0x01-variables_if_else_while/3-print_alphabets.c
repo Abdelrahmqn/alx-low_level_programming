@@ -15,7 +15,6 @@ int main(void)
 	putchar(ch);
 		ch++;
 }
-	putchar('\n');
 {
 	char ch = 'A';
 
