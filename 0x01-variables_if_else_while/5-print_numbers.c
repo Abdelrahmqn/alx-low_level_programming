@@ -8,13 +8,13 @@
 */
 int main(void)
 {
-char ch = '48';
+int i = '48';
 
-	while (ch <= '57')
+	while (i <= '57')
 
 {
-		putchar(ch);
-		ch++;
+		printf("%i\n", i);
+		i++;
 }
 	putchar('\n');
 	return (0);
