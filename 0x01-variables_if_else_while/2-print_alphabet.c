@@ -1,18 +1,22 @@
 #include <stdio.h>
 /**
-* main - Entry point
-*
-* Description: form the character a to z
-*
-* Return: Always 0 (Success)
-*/
+ * main - Entry point
+ *
+ * discrpition: print all alphapet latters
+ *
+ * Return: Always 0 (success)
+ */
+
 int main(void)
 {
 	char ch = 'a';
-	while (ch <= 'z');
+
+	while (ch <= 'z'); 
 	{
-	putchar(ch);
-	ch++;
+		putchar(ch);
+		ch++;
 	}
+	putchar('\n');
+
 	return (0);
 }
