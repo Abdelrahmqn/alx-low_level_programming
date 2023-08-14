@@ -12,8 +12,8 @@ int main(void)
 
 	for (i = 48; i < 57; i++)
 {
-		putchar(ch);
-		ch++;
+		putchar(i);
+		i++;
 }
 {
 	char ch = 'a';
