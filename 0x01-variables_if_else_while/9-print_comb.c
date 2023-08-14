@@ -1,25 +1,23 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- *
- * Description: write the numbers 0 to 10 with ,
- *
- * Return: Always 0 (success)
-*/
+ * main - prints all possible combinations of single-digit numbers
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int i;
+	int n;
 
-		for (i = 48 ; i < 57; i++)
-{
-			putchar(i);
-			putchar(' ');
+	for (n = 48; n < 58; n++)
+	{
+		putchar(n);
+		if (n != 57)
+		{
 			putchar(',');
-}
-}
+			putchar(' ');
+		}
+	}
 	putchar('\n');
 	return (0);
 }
 
-
-}
