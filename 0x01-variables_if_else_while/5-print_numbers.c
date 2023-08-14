@@ -8,17 +8,14 @@
 */
 int main(void)
 {
-int i = '48';
+char ch = '48';
 
-	while (i <= '57')
+	while (ch <= '57')
 
-	{
-		putchar(i);
-		i++
-	}
+{
+		putchar(ch);
+		ch++;
+}
 	putchar('\n');
 	return (0);
-}
-
-
 }
