@@ -1,22 +1,20 @@
 #include <stdio.h>
-/**
- * main - Entry point
- *
- * discrpition: print all alphapet latters
- *
- * Return: Always 0 (success)
- */
 
+/**
+ * main - Prints the alphabet.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	char ch = 'a';
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	while (ch <= 'z')
+	for (i = 0; i < 26; i++)
 	{
-		putchar(ch);
-		ch++;
+		putchar(alp[i]);
 	}
 	putchar('\n');
-
 	return (0);
 }
+
