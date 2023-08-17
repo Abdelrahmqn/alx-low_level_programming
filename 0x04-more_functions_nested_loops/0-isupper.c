@@ -6,7 +6,7 @@
  *
  * Return: retrun 1 if its uppercase ,if not retrun 0
 */
-	int _isupper(int c);
+	int _isupper(int c)
 {
 	if (c >= 65 && c <= 90)
 	{
@@ -14,6 +14,4 @@
 	}
 	else
 		return (0);
-
-
 }
