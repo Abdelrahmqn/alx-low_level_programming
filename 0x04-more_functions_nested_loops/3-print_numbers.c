@@ -1,16 +1,18 @@
 #include "main.h"
+
 /**
- *_putchar - entry point
+ * print_numbers - checks for checks for a digit (0 through 9).
  *
- *print from 0 to 9, followed by a new line
- *
- *Return: Always 0.
-*/
-void print_numbers(void);
+ * Return: Always 0.
+ */
+void print_numbers(void)
 {
-	for (c = 48; c < 58; c++)
-	{
-	_putchar(c);
-	}
-	_putchar('\n');
+ int c;
+
+ for (c = 48; c < 58; c++)
+ {
+ _putchar(c);
+ }
+ _putchar('\n');
 }
+
