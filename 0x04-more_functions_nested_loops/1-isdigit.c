@@ -4,7 +4,7 @@
 * @c: check my in
 * Return: not  Always 0.
 */
-int _isdigit(int c);
+int _isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
 	{
