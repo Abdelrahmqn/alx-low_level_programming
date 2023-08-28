@@ -16,9 +16,6 @@ char *_memset(char *s, char b, unsigned int n)
 	memset(s, b, n);
 
 	for (int i = 0; i < n; i++)
-{
-	printf("%c ", s[i]);
-}
-	printf("\n");
-	return (s);
+	
+		return (s);
 }
