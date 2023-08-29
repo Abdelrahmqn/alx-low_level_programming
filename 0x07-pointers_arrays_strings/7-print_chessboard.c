@@ -6,6 +6,6 @@
 */
 void print_chessboard(char (*a)[8])
 {
-	printf("chessboard");
-		return (0);
+	_putchar((*a)[8]);	
+	return (0);
 }
