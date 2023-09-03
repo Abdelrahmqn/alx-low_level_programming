@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * main - followed by new line If you rename the program
@@ -5,6 +6,7 @@
  * @argc: master argc
  * Return: Always 0 (Success)
 */
+
 int main(int argc[], char const *argv[])
 {
 	void(argc);
