@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * main - followed by new line If you rename the program
  * @argv: master argv
