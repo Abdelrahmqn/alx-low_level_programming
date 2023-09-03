@@ -1,7 +1,6 @@
 #include <main.h>
 /**
- * main - Entry point
- * followed by n l If you rename the program, it will print the new name
+ * main - followed by new line If you rename the program
  * @argv: master argv
  * @argc: master argc
  * Return: Always 0 (Success)
