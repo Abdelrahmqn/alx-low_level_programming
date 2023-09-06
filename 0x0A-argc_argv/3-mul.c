@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <stdio>
 /**
- * main - multiplies two numbers
+ * _atoi - converts a string to an integer
  * @argc: number of arguments
  * @argv: array of arguments
  *
