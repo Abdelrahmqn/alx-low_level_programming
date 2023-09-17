@@ -9,7 +9,7 @@ int sum_them_all(const unsigned int n, ...)
 {
 int sum = 0, i = n;
 va_list ap;
-while (n == 0)
+if (n != 0)
 	return (0);
 	va_start(ap, n);
 while (i--)
