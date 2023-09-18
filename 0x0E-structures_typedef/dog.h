@@ -5,15 +5,14 @@
  *@name : dog
  *@age : int
  *@owner : char
- *description : dog
- *return - 0
+ *description : longer than long
  */
 
 struct dog
 {
 *char name;
 	float age;
-		char *owner
+		char *owner;
 };
 /**
  * dog_t - typedef for struct dog
