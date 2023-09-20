@@ -21,7 +21,7 @@ char *create_array(unsigned int size, char c)
 	srng = malloc(sizeof(char) * size);
 
 	
-	if (size || str)
+	if (size == NULL || str == NULL)
 		
 		return (NULL);
 	
