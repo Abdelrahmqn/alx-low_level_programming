@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdio.h>
 /**
 *init_dog - writte a function that initalize a varible of type.
 *@d:int
