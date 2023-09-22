@@ -8,12 +8,11 @@
 */
 size_t list_len(const list_t *h)
 {
-	int count = 0;
+	size_t count = 0;
 	const list_t *uniq = h;
 
 	while (uniq != NULL)
 	{
-	uniq->next;
 		count++;
 	}
 	return (count);
