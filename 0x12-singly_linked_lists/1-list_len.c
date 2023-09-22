@@ -11,7 +11,7 @@ size_t list_len(const list_t *h)
 	int count = 0;
 	const list_t *uniq = h;
 
-	while (temp != NULL)
+	while (uniq != NULL)
 	{
 		count++;
 	}
