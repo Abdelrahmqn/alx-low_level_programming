@@ -11,17 +11,17 @@
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
-	const list_t *temp = h;
+	const list_t *uniq = h;
 
-	while (temp != NULL)
+	while (uniq != NULL)
 	{
-		if (temp->str == NULL)
+		if (uniq->str == NULL)
 			printf("[0] (nil)\n");
 
 		else
-			printf("[%u] %s\n", temp->len, temp->str);
+			printf("[%d] %s\n", uniq->len, uniq->str);
 
-		temp = temp->next;
+		uniq = uniq->next;
 		count++;
 	}
 
