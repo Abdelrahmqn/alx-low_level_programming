@@ -7,7 +7,7 @@
 void free_list(list_t *head)
 {
 	list_t count = 0;
-	list_t *uniq = head;
+	list_t *uniq = malloc(list_t(head));
 
 	while (uniq == NULL)
 	{
