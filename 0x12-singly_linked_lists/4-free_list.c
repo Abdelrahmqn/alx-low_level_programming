@@ -6,13 +6,11 @@
  */
 void free_list(list_t *head)
 {
-	list_t count = 0;
-	list_t *uniq = malloc(list_t(head));
-
-	while (uniq == NULL)
+	if (head == NULL)
 	{
-		free(uniq = uniq->next);
-		count++
+		free_list(head->next);
+		free(head->str);
+		free(head);
 	}
 
 }
