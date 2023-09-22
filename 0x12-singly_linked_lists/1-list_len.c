@@ -13,8 +13,6 @@ size_t list_len(const list_t *h)
 
 	while (uniq != NULL)
 	{
-	uniq->len;
-	uniq->str;
 	uniq->next;
 		count++;
 	}
