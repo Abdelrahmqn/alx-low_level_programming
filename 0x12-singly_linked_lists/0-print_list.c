@@ -1,27 +1,27 @@
 #include "lists.h"
 
 /**
- * print_list - prints all elemnts of a list_t list.
+ * print_list - we can print all elements using while.
  *
- * @h: inputs pointer
+ * @h: the head.
  *
- * Return: counts
+ * Return: elements
 */
 
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
-	const list_t *uniq = h;
+	const list_t *temp = h;
 
-	while (uniq != NULL)
+	while (temp != NULL)
 	{
-		if (uniq->str == NULL)
+		if (temp->str == NULL)
 			printf("[0] (nil)\n");
 
 		else
-			printf("[%u] %s\n", uniq->len, uniq->str);
+			printf("[%d] %s\n", temp->len, temp->str);
 
-		uniq = uniq->next;
+		temp = temp->next;
 		count++;
 	}
 
