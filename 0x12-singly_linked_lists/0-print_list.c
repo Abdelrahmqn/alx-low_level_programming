@@ -19,7 +19,7 @@ size_t print_list(const list_t *h)
 			printf("[0] (nil)\n");
 
 		else
-			printf("[%d] %s\n", uniq->len, uniq->str);
+			printf("[%d] %s %c\n", uniq->len, uniq->str, uniq->next);
 
 		uniq = uniq->next;
 		count++;
