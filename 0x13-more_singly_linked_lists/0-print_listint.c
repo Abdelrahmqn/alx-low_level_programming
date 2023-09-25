@@ -9,15 +9,13 @@
  */
 size_t print_listint(const listint_t *h)
 {
-size_t count = 0;
-const listint_t *uniq = h;
+	size_t count = 0;
 
-	if (uniq)
+	while (h)
 	{
-	printf("%d\n", uniq->n);
-		uniq = uniq->next;
+	printf("%d\n", h->n);
+		h = h->next;
 		count++;
-
 	}
 	return (count);
 
