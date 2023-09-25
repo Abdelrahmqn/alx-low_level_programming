@@ -14,6 +14,7 @@ const listint_t *uniq = h;
 
 	while (uniq != NULL)
 	{
+	printf("%d\n", uniq->n);
 		uniq = uniq->next;
 		count++;
 
