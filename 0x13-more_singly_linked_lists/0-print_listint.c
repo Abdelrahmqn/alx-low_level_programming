@@ -14,11 +14,11 @@ size_t count = 0;
 
 	while (uniq != NULL)
 	{
-		if (uniq->str == NULL)
+		if (uniq->n == NULL)
 			printf("[0] (nil)\n");
 
 		else
-			printf("[%d] %s\n", uniq->len, uniq->str);
+			printf("%d\n", uniq->n);
 
 		uniq = uniq->next;
 		count++;
