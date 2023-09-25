@@ -10,13 +10,10 @@
 size_t print_listint(const listint_t *h)
 {
 size_t count = 0;
-	const listint_t *uniq = h;
+const listint_t *uniq = h;
 
 	while (uniq != NULL)
 	{
-
-			printf("%d\n", uniq->n);
-
 		uniq = uniq->next;
 		count++;
 
