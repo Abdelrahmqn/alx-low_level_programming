@@ -4,7 +4,7 @@
  * @n: the int to check
  * Return: the absolute value of int
  */
-int _abs(int h)
+int _abs(int n)
 {
 	if (h >= 0)
 	{
