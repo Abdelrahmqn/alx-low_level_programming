@@ -23,7 +23,7 @@ return (-1);
 			len++;
 	}
 
-	w = write(o, text_content, len);
+	w = write(fd, text_content, len);
 
 	if (fd == -1 || w == -1)
 		return (-1);
