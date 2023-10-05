@@ -15,7 +15,7 @@ return (-1);
 }
 	int fd, w, len = 0;
 
-	fd = open(filename, O_ APPEND | O_WRONLY);
+	fd = open(filename, O_APPEND | O_WRONLY);
 
 		if (text_content != NULL)
 		{
