@@ -9,12 +9,19 @@
  */
 int create_file(const char *filename, char *text_content)
 {
+	int fd, w, len = 0;
+
 	if (filename == NULL)
 	{
 	return (-1);
 	}
-	int fd, w, len = 0;
-
+	// stop
+			if (text_content != NULL)
+			{
+				for (len = 0; text_content[len];)
+					len++;
+			}
+//done with length
 	fd = open(filename, O_CREAT | O_RDWR, 0600);
 
 	if (fd == -1)
@@ -22,14 +29,11 @@ int create_file(const char *filename, char *text_content)
 	printf("error");
 	return (-1);
 	}
-	if (text_content != NULL)
+	//done with file
 
-		len = strlen(text_content);
-	w = write(fd, text_content, strlen(text_content));
-	if (w == -1)
-	{
-	return (-1);
-	}
+	w = write(fd, text_content, len);
+	if (fd == -1) || w == -1
+		return (-1);
 	close(fd);
 	return (1);
 }
