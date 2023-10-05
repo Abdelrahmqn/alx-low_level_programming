@@ -13,7 +13,7 @@ int create_file(const char *filename, char *text_content)
 	{
 	return (-1);
 	}
-	int fd;
+	int fd, w, len = 0;
 
 	fd = open(filename, O_CREAT | O_RDWR, 0600);
 
@@ -23,12 +23,11 @@ int create_file(const char *filename, char *text_content)
 	return (-1);
 	}
 	if (text_content != NULL)
-	{
-	ssize_t bytes_written = write(fd, text_content, strlen(text_content));
 
-	if (bytes_written == -1)
+		len = strlen(text_content);
+	w = write(fd, text_content, strlen(text_content));
+	if (w == -1)
 	{
-	close(fd);
 	return (-1);
 	}
 	close(fd);
