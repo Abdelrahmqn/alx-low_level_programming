@@ -9,7 +9,7 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int d = 0;
-	int s = 0;
+	int s;
 
 	while (dest[d] != '\0')
 	{
