@@ -17,10 +17,7 @@ char *_strcat(char *dest, char *src)
 	}
 	while (src[s] != '\0')
 	{
-	s++;
-	}
 	dest[d] = src[s];
-	{
 		d++;
 		s++;
 	}
