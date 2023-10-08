@@ -8,12 +8,13 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	if (!b)
-	return (0);
-
 	unsigned int val = 0;
 
+	if (!b)
+		return (0);
+
 	while (*b)
+	{
 	if (*b != '0' && *b != '1')
 		return (0);
 	val = val * 2 + (*b++ - '0');
