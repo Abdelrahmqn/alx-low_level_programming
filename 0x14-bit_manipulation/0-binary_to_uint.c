@@ -8,14 +8,15 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int c;
+	int c = 0;
 	unsigned int val = 0;
 
 	if (!b)
 		return (0);
 
-	for (c = 0; *b; c++)
+	while (b[c])
 	{
+		c++;
 	if (b[c] != '0' && b[c] != '1')
 		return (0);
 	val = val * 2 + (b[c] - '0');
