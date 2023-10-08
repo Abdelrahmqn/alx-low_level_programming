@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * _strdup - function that returns a pointer to a newly allocated,
  * which contains a copy of the string given as a parameter.
@@ -14,6 +15,6 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	strcpy(a, str)
+	strcpy(a, str);
 	return (a);
 }
