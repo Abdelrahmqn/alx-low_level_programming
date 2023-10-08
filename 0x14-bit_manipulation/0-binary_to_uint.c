@@ -13,7 +13,7 @@ unsigned int binary_to_uint(const char *b)
 
 	unsigned int val = 0;
 
-	while (!b)
+	while (*b)
 	if (*b != '0' && *b != '1')
 		return (0);
 	val = val * 2 + (*b++ - '0');
