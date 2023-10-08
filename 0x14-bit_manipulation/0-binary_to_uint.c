@@ -14,12 +14,15 @@ unsigned int binary_to_uint(const char *b)
 	int c;
 	unsigned int val = 0;
 
-	while (b[c] == 0 || b[c] == 1)
+	for (c = 0; b[c] != '\0'; c++)
 	{
-		val <<= 1;
-		val += b[c] - '0';
-			c++;
-		}
+	if (b[c] != '0' && b[c] != '1')
+	{
+	return (0);
+	}
+	val = val * 2 + (b[c] - '0');
+		c++;
+	}
 
 	return (val);
 }
