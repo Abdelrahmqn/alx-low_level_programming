@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * _strncat - concatenates two strings
+ * _strncpy - concatenates two strings
  * @dest: input src to the dest string
  * @src: input value
  * @n: bytes to string
  * Return: (dest)
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int d = 0;
 	int s;
