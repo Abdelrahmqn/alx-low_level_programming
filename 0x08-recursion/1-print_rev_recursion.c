@@ -10,4 +10,8 @@ void _print_rev_recursion(char *s)
 	printf("%c\n", *s);
 	_print_rev_recursion(s - 1);
 	}
+	else
+	{
+	printf("\n");
+	}
 }
