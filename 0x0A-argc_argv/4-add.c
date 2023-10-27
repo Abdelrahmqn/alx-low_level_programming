@@ -14,6 +14,10 @@ int main(int argc, char *argv[])
 	if (argc < 3 || argc > 3)
 	{
 	printf("Error\n");
+	}
+	else
+	{
+	printf("0\n");
 	return (1);
 	}
 	num1 = atoi(argv[1]);
