@@ -32,7 +32,7 @@ int i, j;
 	{
 		for (j = 0; j < i; j++)
 		{
-			free(ar);
+			free(ar[j]);
 		}
 		free(ar);
 		return (NULL);
