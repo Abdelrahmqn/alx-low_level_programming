@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 #include <stdlib.h>
 /**
  * _strdup - function that returns a pointer to a newly allocated,
@@ -8,20 +9,13 @@
 */
 char *_strdup(char *str)
 {
-	char *a;
+	unsigned int size = strlen(str);
 
-	a = malloc((size + 1) * sizeof(char));
-	while (str[size] != '\0')
-
-		size++;
-	if (a == NULL || str == NULL)
+char *ar = malloc(sizeof(char) * (size + 1));
+	if (ar == NULL || str == NULL)
 	{
-		return (NULL);
+	return (NULL);
 	}
-	for (int i = 0; i < size; i++)
-	{
-	a[i] = str[i];
-	}
-	a[i] = '\0'
-	return (a);
+	strcpy(ar, str);
+	return (ar);
 }
