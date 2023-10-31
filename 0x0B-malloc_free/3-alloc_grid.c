@@ -25,17 +25,19 @@ int i, j;
 		return (NULL);
 	}
 
-	for (i = 0; i < width; i++)
+	for (i = 0; i < height; i++)
 	{
-		ar[i] = malloc(sizeof(int) * height);
+		ar[i] = malloc(sizeof(int) * widt);
 	if (ar[i] == NULL)
 	{
+		for (j = 0; j < i; j++)
+		{
+			free(ar);
+		}
+		free(ar);
 		return (NULL);
 	}
-		for (j = 0; j < width; j++)
-		{
 		ar[i][j] = 0;
 		}
-	}
 	return (ar);
-}
+	}
