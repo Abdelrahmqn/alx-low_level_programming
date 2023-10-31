@@ -19,7 +19,7 @@ int i, j;
 	return (NULL);
 	}
 
-	ar = malloc(height * sizeof(int **));
+	ar = malloc(height * sizeof(int *));
 	if (ar == NULL)
 	{
 		return (NULL);
@@ -27,15 +27,14 @@ int i, j;
 
 	for (i = 0; i < width; i++)
 	{
-		ar[i] = malloc(sizeof(int) * width);
+		ar[i] = malloc(sizeof(int) * height);
 	if (ar[i] == NULL)
-		{
-		for (j = 0; j < i; j++)
-		{
-		free(ar[j]);
-		}
-		free(ar);
+	{
 		return (NULL);
+	}
+		for (j = 0; j < width; j++)
+		{
+		ar[i][j] = 0;
 		}
 	}
 	return (ar);
