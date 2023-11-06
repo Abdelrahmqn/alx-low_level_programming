@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - name of the file it was compiled from, followed by a new line.
- * 
+ * main - entry point of the program.
+ *
+ * Description: name of the file it was compiled from, followed by a new line,
+ * also the function is the entry point of the program.
+ *
  * return: always on success return (0)
  */
 int main(void)
