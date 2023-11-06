@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /**
- * main - entry point of the program.
+ * main - Entry point of the program.
  *
- * Description: name of the file it was compiled from, followed by a new line,
- * also the function is the entry point of the program.
+ * Description: This function is the entry point of the program
+ * print the name of the file it was compiled from.
  *
- * return: always on success return (0)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	printf("%s\n", __FILE__);
-	return (0);
+printf("%s\n", __FILE__);
+return (0);
 }
