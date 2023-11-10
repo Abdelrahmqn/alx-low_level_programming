@@ -5,35 +5,35 @@
  */
 void print_all(const char * const format, ...)
 {
-	char *s;
+	char *str;
 	va_list args;
-	int j;
+	int j = 0;
 
 	va_start(args, format);
-	if (rmat && format[j])
+	if (format && format[j])
 	{
 		switch (format[j])
 		{
 			case 'c':
-				printf("%c", va_arg(args, char));
+				printf("%c", va_arg(args, int));
 				break;
 			case 'i':
-				printf("%d", va_arg(args, int);
+				printf("%d", va_arg(args, int));
 				break;
 			case 'f':
-				printf("%f", va_arg(args, double);
+				printf("%f", va_arg(args, double));
 				break;
 			case 's':
-				s = va_arg(args, char*);
-				if (s == NULL)
+				str = va_arg(args, char*);
+				if (str == NULL)
 					printf("(nil)");
 				else
-				printf("%s", s);
+				printf("%s", str);
 				break;
-				default;
+			default:
 				break;
 		}
-	if (foramt[i + 1])
+	if (format[j + 1])
 	{
 		printf(", ");
 	}
