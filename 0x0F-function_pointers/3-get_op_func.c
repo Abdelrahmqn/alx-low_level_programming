@@ -19,9 +19,9 @@ op_t ops[] = {
 	if (s == NULL)
 	return (NULL);
 
-	for (i = 0; i < 5; i++)
+	for (i = 0; ops[i].op != NULL; i++)
 	{
-		if (strcmp(s, ops[i].op) == 0)
+		if (*(ops[i].op) == *s)
 			return (ops[i].f);
 	}
 	return (NULL);
