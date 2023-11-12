@@ -3,8 +3,9 @@
  * op_add - add two integers
  * @a: input int.
  * @b: input int.
- * Return: the sum. 
+ * Return: the sum.
  */
+
 int op_add(int a, int b)
 {
 	return (a + b);
@@ -14,8 +15,9 @@ int op_add(int a, int b)
  * op_sub - sub two integers
  * @a: input int.
  * @b: input int.
- * Return; teh sub of the two numbers.
+ * Return: teh sub of the two numbers.
  */
+
 int op_sub(int a, int b)
 {
 	return (a - b);
@@ -27,8 +29,9 @@ int op_sub(int a, int b)
  * @b: input int.
  * Return: the mul of the two numbers.
  */
-int op_mul(int a, int b);
+int op_mul(int a, int b)
 {
+
 	return (a * b);
 }
 
@@ -38,12 +41,8 @@ int op_mul(int a, int b);
  * @b: input int.
  * Return: a / b
  */
+int op_div(int a, int b)
 {
-	if (b == 0)
-	{
-	printf("Error\n");
-	exit(100);
-	}
 	return (a / b);
 }
 
@@ -53,10 +52,7 @@ int op_mul(int a, int b);
  * @b: input int .
  * Return: the modulus of the Numbers.
  */
+int op_mod(int a, int b)
 {
-	if (b == 0)
-	{
-		printf("Error\n");
-		exit(100);
 	return (a % b);
 }
