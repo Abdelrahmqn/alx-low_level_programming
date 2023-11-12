@@ -7,7 +7,7 @@ void print_all(const char * const format, ...)
 {
 	char *str;
 	va_list args;
-	int j = 0;
+	unsigned int j = 0;
 
 	va_start(args, format);
 	while (format && format[j])
@@ -26,19 +26,20 @@ void print_all(const char * const format, ...)
 			case 's':
 				str = va_arg(args, char*);
 				if (str == NULL)
-				{
-					printf("(nil)");
-				}
+					str = "(nil)";
 				printf("%s", str);
 				break;
 			default:
+				j++;
+				continue;
 				break;
 		}
-	if (format[j + 1])
+	if(format[j + 1])
 	{
 		printf(", ");
 	}
+	j++;
+	}
 	va_end(args);
 	printf("\n");
-	}
 }
