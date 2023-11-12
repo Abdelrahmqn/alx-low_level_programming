@@ -13,16 +13,15 @@ op_t ops[] = {
 	{"/", op_div},
 	{"%", op_mod},
 	{NULL, NULL}
-	};
-	int i = 0;
+	};int i;
 
-	if (s == NULL)
-	return (NULL);
+	i = 0;
 
-	for (i = 0; ops[i].op != NULL; i++)
+	while (i < 5)
 	{
-		if (*(ops[i].op) == *s)
+		if (!strcmp(ops[i].op, s))
 			return (ops[i].f);
+	i++;
 	}
 	return (NULL);
 }

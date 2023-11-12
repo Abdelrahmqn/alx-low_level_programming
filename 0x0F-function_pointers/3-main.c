@@ -28,7 +28,7 @@ if (argc != 4)
 	if (operator == NULL)
 	{
 		printf("Error\n");
-		return (1);
+		exit (99);
 	}
 	res = operator(num1, num2);
 	printf("%d\n", res);
