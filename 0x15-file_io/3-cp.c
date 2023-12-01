@@ -36,7 +36,7 @@ int copy_from_file(const char *ar1, const char *ar2)
 	f_from = open(ar1, O_RDONLY);
 if (f_from == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE %s", ar1);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", ar1);
 exit(98);
 }
 	f_to = open(ar2, O_WRONLY | O_CREAT | O_TRUNC, 0664);
@@ -47,21 +47,22 @@ exit(98);
 	{
 		close(f_from);
 		close(f_to);
-		dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE %s\n", ar2);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", ar2);
 		exit(99);
+	}
 	}
 	if (bytes_read == -1)
 	{
 	close(f_from);
 	close(f_to);
-dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE %s", ar2);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", ar2);
 	exit(98);
 	}
 	if (close(f_from) == -1 || close(f_to) == -1)
 	{
-	dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n");
+	dprintf(STDERR_FILENO, "Error: Can't close fd\n");
 	exit(100);
 	}
-	}
+
 	return (0);
 }
