@@ -40,7 +40,10 @@ dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE %s", ar1);
 exit(98);
 }
 	f_to = open(ar2, O_WRONLY | O_CREAT | O_TRUNC, 0664);
-	while (f_to == -1 || (bytes_read = read(f_from, buffer, 1024)) > 0)
+	if (f_to == -1)
+		close(f_to);
+		exit(99);
+	while ((bytes_read = read(f_from, buffer, 1024)) > 0)
 	{
 	bytes_write = write(f_to, buffer, bytes_read);
 	if (bytes_write == -1 || bytes_read == -1)
