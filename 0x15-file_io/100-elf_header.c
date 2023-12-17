@@ -1,15 +1,14 @@
-#include "main.h"
-/**
- * main - no more function
- *
- * Describtion: just exit the function
- *
- * return : no thing
- */
-int main(void)
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <elf.h>
+#include <string.h>
+#include <errno.h>
+
+void print_error(const char *msg)
 {
-	while (ELF == -1 || ELF == NULL)
-	{
-		exit(98);
-	}
+	fprintf(stderr, "%s\n", msg);
+	exit(98);
 }
+
