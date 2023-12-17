@@ -6,9 +6,12 @@
 #include <string.h>
 #include <errno.h>
 
-void print_error(const char *msg)
+int main(void)
 {
+	char *msg = "error";
+
 	fprintf(stderr, "%s\n", msg);
 	exit(98);
+	return (0);
 }
 
