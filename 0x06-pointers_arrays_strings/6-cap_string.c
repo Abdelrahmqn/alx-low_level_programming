@@ -11,9 +11,10 @@ char *cap_string(char *s2)
 
 	while (s2[i] != '\0')
 	{
-		if (s2[i] != islower(s2[i]))
+		if (isalpha(s2[i]))
 		{
 			s2[i] = toupper(s2[i]);
+			break;
 		}
 		i++;
 	}
