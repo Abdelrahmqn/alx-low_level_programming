@@ -8,6 +8,7 @@
 	*
 	* Return: on success return 1, otherwise return 0.
 	*/
+
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *new_element;
@@ -24,15 +25,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	return (0);
 	}
 	new_element->key = (char *) key;
-	if (new_element->key == NULL)
-	{
-	free(new_element);
-	return (0);
-	}
-	new_element->key = strdup(value);
+	new_element->value = strdup(value);
 	if (new_element->value == NULL)
 	{
-	free(new_element->value);
 	free(new_element);
 	return (0);
 	}
