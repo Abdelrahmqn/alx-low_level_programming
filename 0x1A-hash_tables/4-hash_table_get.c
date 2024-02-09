@@ -13,6 +13,11 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	hash_node_t *why_tmp;
 	unsigned long int ind = key_index((const unsigned char *) key, ht->size);
 
+	why_tmp = malloc(sizeof(hash_node_t));
+	if (why_tmp == NULL)
+	{
+	return (NULL);
+	}
 	why_tmp = ht->array[ind];
 	if (ht == NULL || key == NULL || *key == '\0')
 	return (NULL);
