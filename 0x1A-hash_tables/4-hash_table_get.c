@@ -22,6 +22,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	{
 	return (ht->array[ind]->value);
 	}
+    ht->array[ind] = ht->array[ind]->next;
 	}
 
 	return (NULL);
