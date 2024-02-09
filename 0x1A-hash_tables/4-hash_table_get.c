@@ -11,7 +11,7 @@
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	hash_node_t *why_tmp;
-	unsigned long int ind = key_index((const unsigned char *) key, ht->size);
+	unsigned int ind = key_index((const unsigned char *) key, ht->size);
 
 	why_tmp = malloc(sizeof(hash_node_t));
 	if (why_tmp == NULL)
