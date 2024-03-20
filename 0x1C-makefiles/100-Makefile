@@ -5,13 +5,8 @@ NAME = school
 RM = rm
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-all: $(NAME)
-
-$(NAME): $(SRC)
-	$(CC) $(CFLAGS) $^ -o $@
-	@if [ ! -e m.h ]; then \
-		exit 1; \
-	fi
+all: m.h $(NAME)
+	$(CC) $(SRC:.c=.o) -o $(NAME)
 
 
 clean:
