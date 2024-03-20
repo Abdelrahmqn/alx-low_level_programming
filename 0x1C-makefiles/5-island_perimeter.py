@@ -1,10 +1,9 @@
 #!/usr/bin/python3
+"""define a function """
+
 
 def island_perimeter(grid):
-    """
-    0 represents a water zone
-    1 represents a land zone
-    """
+    """finds the grid"""
 
     edges = 0
     perimeter = 0
